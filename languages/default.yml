@@ -1,0 +1,15 @@
+home: Home
+categories: Categories
+search: Search
+tags: Tags
+tagcloud: "Tag Cloud"
+tweets: Tweets
+prev: Prev
+next: Next
+comment: Comments
+archive: Archives
+page: "Page %d"
+recent_posts: "Recent Posts"
+recent_comments: "Recent comments"
+menu: "Menu"
+updated: "Update date"

@@ -1,0 +1,8 @@
+	<% if (item.categories){ %>
+  		<ul ><i class="fa fa-archive md-tag"></i>
+  			<% item.categories.each(function(category){ %>
+				<li class="tag"><a href="<%- config.root %><%- category.path %>" title="分类" ><%= category.name %> </a>&nbsp;&nbsp;</li>
+  			<% }) %>
+  			
+  		</ul>&nbsp;
+	<% } %>

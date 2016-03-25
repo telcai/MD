@@ -1,0 +1,22 @@
+
+
+<% if (site.tags.length){ %>
+<div class="widget tags">    
+<header class="mdl-layout__header">
+	
+	<button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  		<i class="material-icons">menu</i>
+	</button>
+   <span class="mdl-layout-title"><%= __('tags') %><span>
+</header>
+
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+  <% site.tags.sort('name').each(function(item){ %>
+		<li><a class="mdl-navigation__link" href="<%- config.root %><%- item.path %>"><%= item.name %> &nbsp;(<%= item.posts.length %>)</a></li>
+  <% }) %>
+</ul>
+  
+</div>
+<% } %>

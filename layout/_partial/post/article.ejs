@@ -1,0 +1,33 @@
+<main class="mdl-layout__content">
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--2-col"></div>
+<article class="<%= item.layout %> mdl-cell mdl-cell--8-col">
+	<div class="article">
+		<h3 class="article-head"><%= item.title %></h3>
+		<time class="archive-time" datetime="<%= item.date.toDate().toISOString() %>"><h5><%= item.date.format(config.date_format) %></h5></time>
+		
+		<div class="picture">	
+		</div>
+
+		<div class="article-cont">
+			<%- item.content %>
+		</div>
+
+		<footer class="article-share">
+			<div class="article-category">
+				<%- partial('category') %>
+			</div>
+			<div class="article-tags">
+				
+			</div>
+			
+			<div class="baidu-share">
+				<%- partial('baidushare') %>	
+			</div>
+		</footer>
+	</div>
+	<div class="comment"></div>
+</article>
+<div class="mdl-cell mdl-cell--2-col"></div>
+</div>
+</main>

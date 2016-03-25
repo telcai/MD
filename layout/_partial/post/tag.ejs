@@ -1,0 +1,11 @@
+
+
+<% if (item.tags) { %>
+	<ul>
+		<i class="fa fa-tags md-tag"></i>
+		<% item.tags.each(function(tag){ %>
+			<li class="tag"><a href=" <%- config.root %><%- tag.path %>"><%= tag.name %></a></li>
+		<% }) %>
+	</ul>
+
+<% } %>
